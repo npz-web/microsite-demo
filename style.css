@@ -1,0 +1,43 @@
+ /* load fonts  */
+ @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Karla&display=swap');
+
+ :root {
+    --light-green: #E8EFC7;
+    --mid-green: #AEC8A4;
+    --light-brown: #8A784F;
+    --dark-moss: #3B3B1B;
+    --font-sans: "Karla", Trebuchet, San Francisco, Helvetica sans-serif;
+ }
+
+ /* global styles */
+body {
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  background: var(--light-green)
+}
+
+/* typography */
+h1, h2, h3 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+ font-size: 16px;
+ line-height: 31px;
+ color: var(--dark-moss);
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
