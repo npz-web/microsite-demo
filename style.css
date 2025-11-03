@@ -2,78 +2,161 @@
  @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Karla&display=swap');
 
  :root {
-    --light-green: #E8EFC7;
-    --mid-green: #AEC8A4;
-    --light-brown: #8A784F;
-    --dark-moss: #3B3B1B;
-    --font-sans: "Karla", Trebuchet, San Francisco, Helvetica sans-serif;
+   --light-green: #E8EFC7;
+   --mid-green: #AEC8A4;
+   --light-brown: #8A784F;
+   --dark-moss: #3B3B1B;
+   --font-sans: "Karla", Trebuchet, San Francisco, Helvetica sans-serif;
  }
 
 
 
  /* global styles */
-body, html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
+ body,
+ html {
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+ }
 
-body {
-  font-family: var(--font-sans);
-  font-optical-sizing: auto;
-  font-weight: 400;
-  background: var(--light-green);
-    position: relative;
-  
-}
+ body {
+   font-family: var(--font-sans);
+   font-optical-sizing: auto;
+   font-weight: 400;
+   background: var(--light-green);
+   position: relative;
 
-#scroll-up {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  background: white;
-  font-size: 40px;
+ }
+
+ #scroll-up {
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   background: white;
+   font-size: 40px;
+   text-decoration: none;
+   border-radius: 100%;
+ }
+
+ img,
+ iframe {
+   max-width: 80vw;
+ }
+
+ /* typography */
+ h1,
+ h2,
+ h3 {
+   font-family: "Arvo", serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ p {
+   font-size: 1rem;
+   line-height: 1.93rem;
+   color: var(--dark-moss);
+   width: 100%;
+   max-width: 577px;
+ }
+
+ h1 {
+   font-size: 38px;
+ }
+
+ h2 {
+   font-size: 24px;
+ }
+
+ h3 {
+   font-size: 18px;
+ }
+
+ /* home page*/
+
+ .sr-only {
+   position: absolute;
+   left: 100000vw;
+ }
+
+ .home #scroll-up {
+   display: none;
+ }
+
+ .card {
+   display: flex;
+   padding: 14px 11px;
+   flex-direction: column;
+   align-items: center;
+   gap: 12px;
+   border-radius: 8px;
+   background: #F9D2E1;
+   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+ }
+
+ .card p,
+ .card h2 {
+   margin: 0;
+   line-height: normal;
+
+ }
+
+ .card h2 {
+   color: #440028;
+   text-align: center;
+   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+ }
+
+ .price {
+   color: #440028;
+   font-size: 30px;
+   font-weight: bold;
+   line-height: normal;
+   text-align: center;
+ }
+
+ .cta {
+  display: block;
+  border-radius: 8px;
+  background: #440028;
+  padding: 12px;
+  color: white;
+  text-align: center;
   text-decoration: none;
-  border-radius: 100%;
-}
+  margin-top: 22px;
+ }
 
-img, iframe {
-    max-width: 80vw;
-}
+  .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
 
-/* typography */
-h1, h2, h3 {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: normal;
-}
 
-p {
- font-size: 1rem;
- line-height: 1.93rem;
- color: var(--dark-moss);
- width: 100%;
- max-width: 577px;
-}
 
-h1 {
-    font-size: 38px;
-}
 
-h2 {
-    font-size: 24px;
-}
 
-h3 {
-    font-size: 18px;
-}
 
-/* home page*/
+ /* MEDIA QUERIES */
 
-.sr-only {
-  position: absolute;
-  left: 100000vw;
-}
+@media (min-width: 700px) {
 
-.home #scroll-up {
-  display: none;
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+
+
+
 }
