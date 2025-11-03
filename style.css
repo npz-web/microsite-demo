@@ -9,12 +9,35 @@
     --font-sans: "Karla", Trebuchet, San Francisco, Helvetica sans-serif;
  }
 
+
+
  /* global styles */
+body, html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-sans);
   font-optical-sizing: auto;
   font-weight: 400;
-  background: var(--light-green)
+  background: var(--light-green);
+    position: relative;
+  
+}
+
+#scroll-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: white;
+  font-size: 40px;
+  text-decoration: none;
+  border-radius: 100%;
+}
+
+img, iframe {
+    max-width: 80vw;
 }
 
 /* typography */
@@ -25,9 +48,11 @@ h1, h2, h3 {
 }
 
 p {
- font-size: 16px;
- line-height: 31px;
+ font-size: 1rem;
+ line-height: 1.93rem;
  color: var(--dark-moss);
+ width: 100%;
+ max-width: 577px;
 }
 
 h1 {
@@ -40,4 +65,15 @@ h2 {
 
 h3 {
     font-size: 18px;
+}
+
+/* home page*/
+
+.sr-only {
+  position: absolute;
+  left: 100000vw;
+}
+
+.home #scroll-up {
+  display: none;
 }
