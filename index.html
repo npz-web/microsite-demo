@@ -3,29 +3,21 @@
 
 <head>
     <title>Creepy Critters: Home</title> <!--  go over unique page titles and adding images -->
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body class="home">
-    <header>
-        <nav aria-label="Main navigation">
-            <!-- Top row container for logo and hamburger -->
 
-            <!-- Logo on the left -->
-            <a href="index.html" class="nav-logo" aria-label="Home">
-                <div class="nav-logo-circle">LOGO</div>
-            </a>
-
-            <div class="flex-right">
-                <!-- Hamburger menu button - only visible on mobile -->
-                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-                    <span class="sr-only">Toggle navigation menu</span>
-                </button>
-
-
-                <!-- your HTML pages go in this list-->
-                <ul id="main-nav" aria-expanded="false">
+    <header class="site-header">
+        <div class="logo"><a href="index.html">MySite</a></div>
+        <div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                <span class="icon" aria-hidden="true">☰</span>
+            </button>
+            <nav class="nav" id="main-nav">
+                <ul>
                     <li>
                         <a href="salamanders.html">
                             Salamanders
@@ -41,13 +33,13 @@
                             Spiders
                         </a>
                     </li>
-
                 </ul>
-            </div>
-        </nav>
-
+            </nav>
+        </div>
 
     </header>
+
+
     <main id="top">
         <h1>Creepy Crawlers</h1>
 
@@ -113,9 +105,7 @@
         <a id="scroll-up" href="#top">🔝</a>
     </footer>
 
-    <!-- <script src="nav.js"> -->
-
-
+    <script src="scripts.js"> 
     </script>
 </body>
 
