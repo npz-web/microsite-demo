@@ -19,8 +19,9 @@
 }
 
 .nav a {
-    color: #333;
+    color: #fff;
     transition: 0.5s color ease;
+    text-decoration: underline;
 }
 
 .nav a:hover, .nav a:focus {
@@ -30,15 +31,15 @@
 
 .nav-toggle {
     display: none;
-    font-size: 1.5rem;
     background: none;
     border: none;
     cursor: pointer;
 }
 
 .nav-toggle .icon {
-    font-size: 1.5rem;
+    font-size: 44px;
     pointer-events: none;
+    color: #440028;
 }
 
 .nav-toggle:focus {
@@ -47,12 +48,17 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+
+    .nav a { 
+        text-decoration: none;
+    }
+
     .nav ul {
         display: none;
         flex-direction: column;
         background: #fff;
         position: absolute;
-        top: 60px;
+        top: 100px;
         right: 0;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         width: 100%;
@@ -63,11 +69,12 @@
 
     .nav ul.open {
         display: flex;
-        gap: 20px
+        gap: 20px;
+        background: #8C487A;
+        color: white;
     }
 
     .nav-toggle {
         display: block;
-        height: 31px;
     }
 }

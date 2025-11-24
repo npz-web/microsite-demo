@@ -1,6 +1,7 @@
  /* load fonts  */
  @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Karla&display=swap');
 
+ /* variables */
  :root {
    --light-green: #E8EFC7;
    --mid-green: #AEC8A4;
@@ -22,7 +23,7 @@
    font-family: var(--font-sans);
    font-optical-sizing: auto;
    font-weight: 400;
-   background: var(--light-green);
+   background: var(--background, linear-gradient(180deg, #a7617a 0%, #8A4679 100%));
    position: relative;
 
  }
@@ -70,6 +71,16 @@
  h3 {
    font-size: 18px;
  }
+
+ /* COMPONENTS */
+
+ /* header */
+
+ header img {
+  max-width: 200px;
+ }
+
+ /* PAGES */
 
  /* home page*/
 
@@ -143,7 +154,18 @@
  }
 
 
+/* spider page */
 
+.spider-bg {
+  background: linear-gradient(180deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('img/spider.jpg') ;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
